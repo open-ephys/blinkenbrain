@@ -1,0 +1,44 @@
+*July 27, 2005
+*Doc. ID: 78710, S-51298, Rev. C
+*File Name: Si1012R_PS.txt and Si1012R_PS.lib
+.SUBCKT Si1012R 4 1 2
+M1   3 5 2 2 NMOS W=29549u L=0.50u 
+M2   2 5 2 4 PMOS W=29549u L=0.95u 
+R1   4 3     RTEMP 130E-3
+CGS  5 2     41E-12
+DBD  2 4     DBD
+XESD 1 5 2   Si1012R_ESD
+************************************************************  
+.MODEL  NMOS         NMOS (LEVEL  = 3        TOX    = 1.7E-8
++ RS     = 280E-3          RD     = 0        NSUB   = 1.5E17   
++ KP     = 5.6E-5          UO     = 650             
++ VMAX   = 0               XJ     = 5E-7     KAPPA  = 10E-2
++ ETA    = 1E-4            TPG    = 1  
++ IS     = 0               LD     = 0                             
++ CGSO   = 0               CGDO   = 0        CGBO   = 0 
++ NFS    = 0.8E12          DELTA  = 0.1)
+************************************************************  
+.MODEL  PMOS         PMOS (LEVEL  = 3        TOX    = 1.7E-8
++NSUB    = 2.6E16          TPG    = -1)   
+************************************************************  
+.MODEL DBD D (CJO=32E-12 VJ=0.38 M=0.3
++RS=1 FC=0.1 IS=1E-12 TT=4E-8 N=1 BV=20.5)
+************************************************************ 
+.MODEL RTEMP RES (TC1=10E-3 TC2=5.5E-6)
+************************************************************  
+.ENDS Si1012R
+.subckt Si1012R_ESD 1 5 2
+rd1 1 6 1 TC=300
+d1 6 2 dleak 
+.MODEL dleak d (IS=3E-9 XTI=350 EG=1.17 T_MEASURED=25 TBV1=0 N=34 BV=6.4) 
+rd2 1 7 34 TC=-0.0002
+d2 8 7 dout 1
+d3 8 2 dout 1
+.MODEL dout D (IS=5.1E-9 XTI=-35 EG=1.17 T_MEASURED=25 TBV1=-5.64E-4 N=2 BV=6.38)
+rpoly 1 5 100 TC=0.001
+rd4 5 9 100 TC=-0.015
+d4 10 9 din 1
+d5 10 2 din 1
+.MODEL din D (IS=5.1E-9 XTI=-30 EG=1.17 T_MEASURED=25 TBV1=-1.76E-4 N=1.5 BV=6.25)
+.ends Si1012R_ESD   
+
