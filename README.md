@@ -9,5 +9,8 @@ IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS—II: EXPRESS BRIEFS, VOL. 62, NO. 9, 
 
 and uses its strange dynamics blink a blinkenlight. 
 
+
+![Blinkenbrain rev. A](./pcb/images/front-back-render.png)
+
 ## License
 "No Rights Reserved", CC0
