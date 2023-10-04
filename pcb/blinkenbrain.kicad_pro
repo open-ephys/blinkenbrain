@@ -58,7 +58,8 @@
       "drc_exclusions": [
         "courtyards_overlap|143092470|101617011|32fa244d-6179-46d9-a8aa-01c431d94053|ba6ab01f-b0ab-41e3-b3a1-7fde5cb6c258",
         "lib_footprint_issues|141800688|90299731|32aba6ef-d761-4822-baf4-3ede0e295985|00000000-0000-0000-0000-000000000000",
-        "silk_edge_clearance|168901543|85770610|68d94945-9262-4d69-b727-ac7f0fadfc2d|45b8895e-2e02-41cb-9c3d-bd43068592ec"
+        "lib_footprint_issues|142400688|90399731|32aba6ef-d761-4822-baf4-3ede0e295985|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|168901543|85770610|68d94945-9262-4d69-b727-ac7f0fadfc2d|509a6a2f-16e0-4716-82df-c3e9694061ae"
       ],
       "meta": {
         "version": 2
