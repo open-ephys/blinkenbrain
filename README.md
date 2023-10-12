@@ -12,7 +12,8 @@ and uses its strange dynamics blink a blinkenlight.
 ![Blinkenbrain rev. A](./pcb/images/front-back-render.png)
 
 ## How does it blink?
-![Chaotic circuit schematic](./pcb/images/circuit-elements.png)
+
+<img src="./pcb/images/circuit-elements.png" width="60%" alt="Chaotic circuit schematic" >
 
 The circuit consists of a RC phase shift oscillator (blue) combined with what amounts to a tunable Schmitt trigger (red).
 The position of the trimpot (RV1) determines if the effect of Q1B on this oscillator.
