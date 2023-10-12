@@ -27,5 +27,7 @@ The position of the trimpot (RV1) determines if the effect of Q1B on this oscill
 The gate of an N-channel MOSFET is tied to the collector of Q1A to drive the LED without influencing the
 circuit's dynamics. For a complete explanation, see the above referenced paper.
 
+<img src="./pcb/images/scope_tp4-vs-tp3_01.png" width="60%" alt="V(TP4) vs. V(TP3) when RV1 is tuned to ~70kΩ" >
+
 ## License
 "No Rights Reserved", CC0
