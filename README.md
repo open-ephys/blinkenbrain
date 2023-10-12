@@ -18,8 +18,8 @@ and uses its strange dynamics blink a blinkenlight.
 The circuit consists of a RC phase shift oscillator (blue) combined with what amounts to a tunable Schmitt trigger (red).
 The position of the trimpot (RV1) determines if the effect of Q1B on this oscillator.
 
-- When the wiper of RV1 is tuned to ground, Q1B does not conduct, and the Schmitt trigger is effectively removed from the circuit
-- When the wiper of RV1 is tuned to 100k, Q1B acts as trigger without hysteresis, and therefore conducts synchronously with the
+- When the wiper of RV1 is tuned to 0Ω, Q1B does not conduct, and the Schmitt trigger is effectively removed from the circuit
+- When the wiper of RV1 is tuned to 100kΩ, Q1B acts as trigger without hysteresis, and therefore conducts synchronously with the
   RC oscillator.
 - When the wiper of RV1 is turned in between these two extremes, a hysteretic path is formed between Q1B's conducting and non-conducting states,
   which results in the emergence of two interacting unstable equilibria and, for some values of RV1, chaotic dynamics.
