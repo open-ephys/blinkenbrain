@@ -25,7 +25,7 @@ The position of the trimpot (RV1) determines if the effect of the Schmitt trigge
   which results in the emergence of two interacting unstable equilibria and, for some values of RV1, chaotic dynamics.
 
 The gate of an N-channel MOSFET is tied to the collector of Q1A to drive the LED without influencing the
-circuit's dynamics. The following image shows V<sub>TP4</sub>} vs.V<sub>TP3</sub>} when RV1 is tuned to ~70kΩ.
+circuit's dynamics. The following image shows V<sub>TP4</sub> vs.V<sub>TP3</sub> when RV1 is tuned to ~70kΩ.
 
 ![V(TP4) vs. V(TP3) when RV1 is tuned to ~70kΩ](./pcb/images/scope_tp4-vs-tp3_01.png)
 
