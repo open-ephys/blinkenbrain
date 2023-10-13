@@ -7,7 +7,7 @@ Lars Keuninckx, Guy Van der Sande, and Jan Danckaert
 IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS—II: EXPRESS BRIEFS, VOL. 62, NO. 9, SEPTEMBER 2015
 ```
 
-and uses its strange dynamics blink a blinkenlight.
+and uses its strange dynamics to blink a blinkenlight.
 
 ![Blinkenbrain rev. A](./pcb/images/front-back-render.png)
 
